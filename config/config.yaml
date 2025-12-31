@@ -1,0 +1,12 @@
+server:
+  port: 18081                 # 服务器端口
+upload:
+  directory: "/usr/local/hainan/upload"  # 上传文件的保存目录
+  max_size: 200
+deploy:
+  backend:
+    script_path: "/opt/cicd/deploy/deploy_backend.sh"
+    working_dir: "/opt/cicd/deploy"
+  frontend:
+    script_path: "/opt/cicd/deploy/deploy_frontend.sh"
+    working_dir: "/opt/cicd/deploy"
